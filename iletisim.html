@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İletişim</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
-<body>
 
-    <nav>
-        <ul>
-            <li><a href="/">Anasayfa</a></li>
-            <li><a href="diziler.html">Diziler</a></li>
-            <li><a href="filmler.html">Filmler</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-        </ul>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand" href="index.html">DiziFilm</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Anasayfa</a></li>
+                <li class="nav-item"><a class="nav-link" href="filmler.html">Filmler</a></li>
+                <li class="nav-item"><a class="nav-link" href="diziler.html">Diziler</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+            </ul>
+            <div>
+                <a class="btn btn-outline-light me-2" href="#">Giriş Yap</a>
+                <a class="btn btn-light" href="#">Kayıt Ol</a>
+            </div>
+        </div>
     </nav>
 
-    <h3>Bana ulaşmak için aşağıdaki bağlantıyı kullanabilir ya da bana mail atabilirsiniz</h3>
-    <h4><a href="https://www.instagram.com/smehmet.exe/?next=%2F">Instagram</a></h4>
-    <h4><strong>Mail: </strong> mehmetsonmez5879@gmail.com</h4>
-    <h4><strong>Telefon: </strong>1111111111</h4>
-    
-    <div class="ben">
-        <img src="assets/img/ben.png" alt="benim-resmim">
+    <div class="container mt-5">
+        <h2 class="mb-4">İletişim Bilgilerim</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Bana Ulaşın</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="https://www.instagram.com/smehmet.exe/?next=%2F" class="social-link">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Mail:</strong> mehmetsonmez5879@gmail.com
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Telefon:</strong> 1111111111
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="profile-image">
+                    <img src="assets/img/ben.png" alt="benim-resmim" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

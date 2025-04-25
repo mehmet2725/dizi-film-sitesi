@@ -1,22 +1,26 @@
-*{
-    background-color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
-    color: white;
-}
-.konteyner{
-    margin-left: 550px;
-   
-    max-width: 800px;
-    text-align: center;
 
+
+body{
+    background-color: #000;
 }
-img{
-    border-radius: 16px;
-    transition-delay: 0.1s
+.row {
+    padding-left: 50px;
+    
 }
-img:hover{
+.card img {
+    height: 500px;
+    object-fit: cover;
+}
+.card {
+    
+    padding: 0;
+    width: 600px;
+    height: 750px;
+    background-color: #1e1e1e;
+    border: none;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+.card:hover {
     transform: scale(1.02);
-    box-shadow: 1px 1px 1px #000000;
-    transition-delay: 0.1s;
 }

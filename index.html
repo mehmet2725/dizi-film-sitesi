@@ -1,65 +1,154 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anasayfa</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anasayfa</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Anasayfa</a></li>
-            <li><a href="diziler.html">Diziler</a></li>
-            <li><a href="filmler.html">Filmler</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-        </ul>
-    </nav>
-    
-    <div class="konteyner">
-        <h1>Anasayfa</h1>
-        <div class="dizi-kategori">
-        
-            <h1>Dizi Kategorisi</h1>
-            <div>
-                <h3><strong>Mr. Robot</strong></h3>
-                <a href="mr-robot.html"><img src="assets/img/mr-robot-afis.jpg" alt="mr-robot-afis"></a>
-                <p><strong>Tür:</strong> Drama Tekno gerilim Psikolojik gerilim</p>
-                <p><strong>Konusu:</strong> Mr. Robot, hacker olan Elliot Alderson'ın, gizemli Mr. Robot’un liderliğindeki fsociety adlı grup ile büyük şirketlere karşı siber saldırılar düzenlemesini konu alır. Elliot, kişisel ve toplumsal sorunlarla mücadele ederken, sistemi alt üst etmeye çalışır.</p>
-                <a href="mr-robot.html">Dizinin Detayına Git</a>
-            </div>
-                <br>
-            <div>
-                <h3><strong>Peaky Blinders</strong></h3>
-                <a href="peaky-blinders.html"><img src="assets/img/peaky-blinders-afis.jpg" alt="peaky-blinders-afis"></a>
-                <p><strong>Tür:</strong> Suç draması Tarihî dönem draması Psikolojik gerilim</p>
-                <p><strong>Konusu:</strong> Peaky Blinders, 1920'lerde Birmingham, İngiltere'de geçen bir suç dramadır. Dizi, Shelby ailesinin lideri Thomas Shelby ve ailesinin, organize suç dünyasında yükselmesini takip eder. Peaky Blinders adlı çeteleri, yasadışı işlerle para kazanır ve rakip gruplarla, polisle ve siyasi güçlerle mücadele eder. Aile, hem içsel çatışmalarla hem de dış tehditlerle başa çıkmak zorundadır.</p>
-                <a href="peaky-blinders.html">Dizinin Detayına Git</a>
-            </div>
-            <br>
-            <a href="diziler.html">Daha Fazla Dizi</a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="index.html">DiziFilm</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Anasayfa</a></li>
+        <li class="nav-item"><a class="nav-link" href="filmler.html">Filmler</a></li>
+        <li class="nav-item"><a class="nav-link" href="diziler.html">Diziler</a></li>
+        <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+      </ul>
+      <div>
+        <a class="btn btn-outline-light me-2" href="#">Giriş Yap</a>
+        <a class="btn btn-light" href="#">Kayıt Ol</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="icerde.html"><img src="assets/img/icerde-afis.jpg" class="d-block w-100" alt="icerde-afis"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="himym.html"><img src="assets/img/himym-afis.jpg" class="d-block w-100" alt="himym-afis"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="the-dark-knight.html"><img src="assets/img/the-dark-knight-afis.jpg" class="d-block w-100" alt="the-dark-knight-afis"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="kuru-otlar-ustune.html"><img src="assets/img/kuru-otlar-ustune.jpg" class="d-block w-100" alt="kuru-otlar-ustune-afis"></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container my-5">
+    <h2 class="mb-4">Dizi Kategorisi</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <a href="mr-robot.html"><img src="assets/img/mr-robot-afis.jpg" class="card-img-top" alt="Mr. Robot"></a>
+          <div class="card-body">
+            <h5 class="card-title">Mr. Robot</h5>
+            <p class="card-text">Hacker olan Elliot, fsociety adlı grupla sisteme saldırır.</p>
+            <a href="mr-robot.html" class="btn btn-outline-primary">Detaya Git</a>
+          </div>
         </div>
-            <br>
-        <div class="film-kategori">
-            <h2>Film Kategorisi</h2>
-            <div>
-                <h3><strong>Prestige</strong></h3>
-                <<a href="the-prestige.html"><img src="assets/img/the-prestige-afis.jpg" alt="the-prestige-afis"></a>
-                <p><strong>Tür:</strong> Psikolojik gerilim</p>
-                <p><strong>Konusu:</strong> The Prestige, iki sihirbazın birbirine rakip olmasını konu alır. Robert Angier ve Alfred Borden, her biri birbirinden şaşırtıcı illüzyonlar yaparak bir zamanlar arkadaşken, aralarındaki rekabet onları düşman yapar. Film, gizem, intikam ve hırsla örülmüş bir şekilde, her sihirbazın "büyüsünü" keşfetmeye çalışan bir hikayeye odaklanır.</p>
-                <a href="the-prestige.html">Filmin Detayına Git</a>
-            </div>
-                <br>
-            <div>
-                <h3><strong>Kuru Otlar Üstüne</strong></h3>
-                <a href="kuru-otlar-ustune.html"><img src="assets/img/kuru-otlar-ustune.jpg" alt="kuru-otlar-ustune-afis"></a>
-                <p><strong>Tür:</strong> Dram/Kurgusal</p>
-                <p><strong>Konusu:</strong> Kuru Otlar Üstüne, küçük bir kasabada öğretmenlik yapan Samet'in, kendi hayatındaki belirsizliklerle ve çevresindeki insanlarla başa çıkma mücadelesini konu alır. Film, Samet'in işinden, çevresel baskılardan ve içsel çatışmalarından kaçmaya çalışırken, aşk ve hayal kırıklığı ile yüzleşmesini anlatır.</p>
-                <a href="kuru-otlar-ustune.html">Filmin Detayına Git</a>
-            </div>
-            <br>
-            <a href="filmler.html">Daha Fazla Film</a>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="peaky-blinders.html"><img src="assets/img/peaky-blinders-afis.jpg" class="card-img-top" alt="Peaky Blinders"></a>
+          <div class="card-body">
+            <h5 class="card-title">Peaky Blinders</h5>
+            <p class="card-text">1920'lerde Birmingham’da geçen bir suç hikayesi.</p>
+            <a href="peaky-blinders.html" class="btn btn-outline-primary">Detaya Git</a>
+          </div>
         </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="himym.html"><img src="assets/img/himym-afis.jpg" class="card-img-top" alt="himym-afis"></a>
+          <div class="card-body">
+            <h5 class="card-title">How I Met Your Mother</h5>
+            <p class="card-text">Ted (2030'da), kızı Penny ve oğlu Luke'a, anneleriyle tanışmasına yol açan Eylül 2005'ten Mayıs 2013'e kadar olan olayları anlatır.</p>
+            <a href="himym.html" class="btn btn-outline-primary">Detaya Git</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="diziler.html" class="btn btn-outline-secondary">Daha Fazla Yükle</a>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h2 class="mb-4">Film Kategorisi</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="the-prestige.html"><img src="assets/img/the-prestige-afis.jpg" class="card-img-top" alt="The Prestige"></a>
+            <div class="card-body">
+              <h5 class="card-title">The Prestige</h5>
+              <p class="card-text">İki sihirbazın kıyasıya rekabetini anlatan psikolojik gerilim filmi.</p>
+              <a href="the-prestige.html" class="btn btn-outline-primary">Detaya Git</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="kuru-otlar-ustune.html"><img src="assets/img/kuru-otlar-ustune.jpg" class="card-img-top" alt="Kuru Otlar Üstüne"></a>
+            <div class="card-body">
+              <h5 class="card-title">Kuru Otlar Üstüne</h5>
+              <p class="card-text">Öğretmen Samet’in taşrada verdiği hayat mücadelesini konu alır.</p>
+              <a href="kuru-otlar-ustune.html" class="btn btn-outline-primary">Detaya Git</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="the-dark-knight.html"><img src="assets/img/the-dark-knight-afis.jpg" class="card-img-top" alt="The Dark Knight"></a>
+            <div class="card-body">
+              <h5 class="card-title">Film Adı</h5>
+              <p class="card-text">Christopher Nolan'ın elinden Batman Kara Şövalye</p>
+              <a href="the-dark-knight.html" class="btn btn-outline-primary">Detaya Git</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="filmler.html" class="btn btn-outline-secondary">Daha Fazla Yükle</a>
+
+      </div>
     </div>
 </body>
+
 </html>
